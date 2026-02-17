@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mira DesigX — Nano Banana Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar glass">
+        <div class="logo-wrap">
+          <div class="logo-orb"></div>
+          <div>
+            <h1>Mira DesigX</h1>
+            <p>Nano Banana Pro</p>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <button class="nav-item active">Criar Design</button>
+          <button class="nav-item">Recentes</button>
+          <button class="nav-item">Avatares</button>
+          <button class="nav-item">Referências</button>
+          <button class="nav-item">Identidade Visual</button>
+          <button class="nav-item">Configurações</button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>Render Ultra Realista</p>
+          <small>Pipeline IA Cinemático</small>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar glass">
+          <div>
+            <h2>Criar Design</h2>
+            <p>
+              Plataforma avançada de IA para criativos ultra realistas com controle profissional.
+            </p>
+          </div>
+          <div class="status-pills">
+            <span class="pill">Tempo real</span>
+            <span class="pill glow">Premium Engine</span>
+          </div>
+        </header>
+
+        <section class="steps-bar glass">
+          <button class="step active">1. Configuração Base</button>
+          <button class="step">2. Seleção</button>
+          <button class="step">3. Textos</button>
+          <button class="step">4. Exportação</button>
+        </section>
+
+        <section class="workspace-grid">
+          <article class="panel glass panel-main">
+            <h3>Etapa 1 — Configuração Base</h3>
+
+            <div class="field-group">
+              <label>Formato</label>
+              <div class="chips">
+                <button class="chip active">1:1</button>
+                <button class="chip">4:5</button>
+                <button class="chip">9:16</button>
+                <button class="chip">16:9</button>
+                <button class="chip">Custom</button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label>Pessoa</label>
+              <div class="split-row">
+                <button class="soft-btn">Upload rosto</button>
+                <button class="soft-btn">Selecionar avatar salvo</button>
+              </div>
+              <div class="avatar-grid">
+                <div class="avatar-card selected">Avatar 01</div>
+                <div class="avatar-card">Avatar 02</div>
+                <div class="avatar-card">Avatar 03</div>
+                <div class="avatar-card">Avatar 04</div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label>Posição da Pessoa</label>
+              <div class="chips">
+                <button class="chip">Esquerda</button>
+                <button class="chip active">Centro</button>
+                <button class="chip">Direita</button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label>Referências</label>
+              <button class="soft-btn full">Upload de imagens de referência</button>
+              <textarea
+                placeholder="Descreva o que deve se aproveitar na referência"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <div class="field-group two-col">
+              <div>
+                <label>Nicho / Projeto</label>
+                <input type="text" placeholder="Ex.: SaaS de IA para marketing" />
+              </div>
+              <div>
+                <label>Ambiente</label>
+                <input type="text" placeholder="Ex.: Estúdio futurista cinematográfico" />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="toggle-row">
+                <span>Elementos Flutuantes</span>
+                <input type="checkbox" checked />
+              </label>
+            </div>
+
+            <div class="field-group">
+              <label>Paleta</label>
+              <div class="chips">
+                <button class="chip active">Padrão</button>
+                <button class="chip">Template Salvo</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <h3>Painel — Cores & Iluminação</h3>
+            <div class="field-group">
+              <label>Modo</label>
+              <div class="chips">
+                <button class="chip">Preset</button>
+                <button class="chip active">Personalizado</button>
+              </div>
+            </div>
+            <div class="color-controls">
+              <div>
+                <label>Cor do Ambiente</label>
+                <input type="color" value="#121218" />
+              </div>
+              <div>
+                <label>Luz de Recorte</label>
+                <input type="color" value="#7B2CFF" />
+              </div>
+              <div>
+                <label>Luz Complementar</label>
+                <input type="color" value="#A66BFF" />
+              </div>
+            </div>
+
+            <h3>Painel — Atributos Visuais</h3>
+            <div class="field-group">
+              <label>Sobriedade → Criativo</label>
+              <input type="range" min="0" max="100" value="66" />
+            </div>
+
+            <label class="toggle-row">
+              <span>Ativar Estilo Visual</span>
+              <input type="checkbox" checked />
+            </label>
+
+            <div class="style-grid">
+              <button class="style-item">Clássico</button>
+              <button class="style-item">Formal</button>
+              <button class="style-item">Elegante</button>
+              <button class="style-item">Minimalista</button>
+              <button class="style-item">Luxo</button>
+              <button class="style-item">Gamer</button>
+              <button class="style-item">Realista Profissional</button>
+              <button class="style-item active">Ultra Realista</button>
+              <button class="style-item">Glow</button>
+              <button class="style-item">Cartoon</button>
+              <button class="style-item">Interface UI</button>
+              <button class="style-item">Ilustração</button>
+            </div>
+
+            <div class="field-group extras">
+              <label class="toggle-row"><span>Blur</span><input type="checkbox" /></label>
+              <label class="toggle-row"
+                ><span>Degradê lateral</span><input type="checkbox" checked
+              /></label>
+              <button class="soft-btn full">Prompt adicional</button>
+            </div>
+
+            <button class="cta">GERAR IMAGENS</button>
+          </article>
+        </section>
+
+        <section class="panel glass selection-section">
+          <div class="section-title">
+            <h3>Etapa 2 — Seleção de Imagens</h3>
+            <p>Geração múltipla simultânea com variações regeneráveis.</p>
+          </div>
+          <div class="generated-grid">
+            <div class="generated-card">
+              <div class="preview"></div>
+              <div class="actions"><button>Selecionar</button><button>Regenerar variação</button></div>
+            </div>
+            <div class="generated-card">
+              <div class="preview alt"></div>
+              <div class="actions"><button>Selecionar</button><button>Regenerar variação</button></div>
+            </div>
+            <div class="generated-card">
+              <div class="preview deep"></div>
+              <div class="actions"><button>Selecionar</button><button>Regenerar variação</button></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="workspace-grid lower">
+          <article class="panel glass">
+            <h3>Etapa 3 — Textos</h3>
+            <div class="field-group"><label>Título</label><input type="text" placeholder="Digite um título impactante" /></div>
+            <div class="field-group"><label>Subtítulo</label><input type="text" placeholder="Subtítulo estratégico" /></div>
+            <div class="field-group"><label>Texto do botão CTA</label><input type="text" placeholder="Começar agora" /></div>
+            <div class="field-group">
+              <label>Alinhamento do Texto</label>
+              <div class="chips"><button class="chip">Esquerda</button><button class="chip active">Centro</button><button class="chip">Direita</button></div>
+            </div>
+            <button class="cta">GERAR CRIATIVO FINAL</button>
+          </article>
+
+          <article class="panel glass">
+            <h3>Preview em Tempo Real</h3>
+            <div class="live-preview">
+              <div class="overlay-text">
+                <h4>Potencialize seu Criativo com IA Premium</h4>
+                <p>Render cinematográfico de alta conversão em segundos.</p>
+                <span>Começar agora</span>
+              </div>
+            </div>
+            <button class="cta secondary">Exportar Criativo Profissional</button>
+          </article>
+        </section>
+
+        <section class="workspace-grid lower">
+          <article class="panel glass">
+            <h3>Histórico</h3>
+            <div class="history-grid">
+              <div class="history-item"><div class="mini"></div><small>Hoje</small><div class="inline-actions">editar · duplicar · baixar</div></div>
+              <div class="history-item"><div class="mini"></div><small>Ontem</small><div class="inline-actions">editar · duplicar · baixar</div></div>
+              <div class="history-item"><div class="mini"></div><small>02/01</small><div class="inline-actions">editar · duplicar · baixar</div></div>
+            </div>
+          </article>
+
+          <article class="panel glass">
+            <h3>Avatares</h3>
+            <div class="field-group"><button class="soft-btn">Adicionar avatar</button></div>
+            <div class="field-group"><input type="text" placeholder="Nomear avatar" /></div>
+            <div class="chips"><button class="chip">Selecionar</button><button class="chip">Deletar</button></div>
+
+            <h3>Identidade Visual</h3>
+            <p class="muted">Paletas com até 3 cores (Ambiente, Recorte, Complementar).</p>
+            <div class="palette-row">
+              <input type="color" value="#121218" />
+              <input type="color" value="#7B2CFF" />
+              <input type="color" value="#A66BFF" />
+            </div>
+            <div class="split-row"><button class="soft-btn">Salvar template</button><button class="soft-btn">Editar</button><button class="soft-btn">Deletar</button></div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
